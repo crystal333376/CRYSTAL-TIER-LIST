@@ -6,9 +6,9 @@
 <style>
 body {
     margin: 0;
-    background: black;
-    color: white;
     font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
 }
 
 .container {
@@ -19,14 +19,49 @@ body {
     align-items: center;
 }
 
+/* Title */
 h1 {
-    font-size: 60px;
-    margin-bottom: 40px;
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-shadow: 0 0 20px cyan;
 }
 
+/* Rank row */
 .rank {
-    font-size: 40px;
-    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 45px;
+    font-weight: bold;
+    margin: 15px 0;
+    padding: 10px 25px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(5px);
+}
+
+/* Number styles */
+.rank span {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.rank1 span { color: gold; text-shadow: 0 0 15px gold; }
+.rank2 span { color: deepskyblue; text-shadow: 0 0 15px deepskyblue; }
+.rank3 span { color: red; }
+.rank4 span { color: lime; }
+.rank5 span { color: white; }
+
+/* Icons */
+.icon {
+    font-size: 35px;
+}
+
+/* Hover */
+.rank:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
 }
 </style>
 
@@ -35,13 +70,32 @@ h1 {
 <body>
 
 <div class="container">
-    <h1>🔥 CRYSTAL TIER LIST 🔥</h1>
+    <h1>⚔️ CRYSTAL PVP RANKS ⚔️</h1>
 
-    <div class="rank">#1 Crystal Cube 6969</div>
-    <div class="rank">#2 Shiny Basfore</div>
-    <div class="rank">#3 Empty</div>
-    <div class="rank">#4 Empty</div>
-    <div class="rank">#5 Empty</div>
+    <!-- #1 Spear + Mace -->
+    <div class="rank rank1">
+        <span>#1</span>
+        👑 🔱 🔨 Crystal Cube 6969
+    </div>
+
+    <!-- #2 Sword -->
+    <div class="rank rank2">
+        <span>#2</span>
+        🗡️ Shiny Basfore
+    </div>
+
+    <div class="rank rank3">
+        <span>#3</span> Empty
+    </div>
+
+    <div class="rank rank4">
+        <span>#4</span> Empty
+    </div>
+
+    <div class="rank rank5">
+        <span>#5</span> Empty
+    </div>
+
 </div>
 
 </body>
